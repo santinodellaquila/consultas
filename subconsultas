@@ -1,0 +1,11 @@
+1) select * FROM CLIENTES
+Where localidad IN (select ID from ciudades where nombre="Buenos Aires");
+
+2) SELECT * from productos 
+WHERE precio>(SELCT avg(precio) from productos);
+
+3) SELECT * from clientes
+WHERE  IN (SELECT cliente 
+    FROM compras 
+    WHERE producto = 5
+);
