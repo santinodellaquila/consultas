@@ -1,0 +1,13 @@
+1) select * from clientes;
+2) select nombre_provincia from provincias;
+4) select productos order by precio_producto desc limit 3;
+5) select * from ciudades order by provincia asc;
+6) select * from provincias where habitantes > 100000 and habitantes < 1000000;
+7) select c.nombre, c.apellido, ci.nombre from clientes c join ciudades ci on c.id_ciudad = ci.id;
+8) select ci.nombre, p.nombre from ciudades c join provincias p on ci.id_provincia = p.id;
+9) select sum(stock)  from productos;
+10) select avg(precio_producto)  from productos;
+11) select count(*) from clientes;
+12) select * from ciudades order by poblacion_ciudad desc limit 3;
+13) select * from productos where stock < 10;
+15) select * from compras order by fecha_compra desc limit 1;
