@@ -8,4 +8,7 @@ WHERE precio>(SELCT avg(precio) from productos);
 WHERE  IN (SELECT cliente 
     FROM compras 
     WHERE producto = 5
-);
+); 
+
+4) SELECT * from provincias 
+WHERE precio>(SELCT avg(poblacion) from provincias );
